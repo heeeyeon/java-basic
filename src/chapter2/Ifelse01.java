@@ -11,7 +11,10 @@ import java.util.Scanner;
 
 public class Ifelse01 {
 	public static void main(String[] args) {
-		System.out.println("점수를 입력하세요:");
+		// println() : 개행문자가 포함되어있다
+		// print() : 출력 후 개행하지 않는다
+//		System.out.println("점수를 입력하세요:");	
+		System.out.print("점수를 입력하세요:");	
 		// 스캐너 클래스의 생성자의 매개변수에는 입력장치에 대한 정보(객체)를 넣는다
 		// System.in : 표준입력 장치에 대한 정보를 갖는 객체
 		// System.out : 표준출력 장치에 대한 정보를 갖는 객체
@@ -19,6 +22,13 @@ public class Ifelse01 {
 		// Scanner 클래스 객체가 가진 nextInt라는 메서드를 부르기 위해 점 연산자를 사용하였다.
 		int score = input.nextInt();
 		
-		System.out.println(score);
+//		System.out.println(score);
+		
+		// 제어문 시작
+		if(score >= 70) {
+			System.out.println("합격입니다");
+		} else {
+			System.out.println("불합격입니다");
+		}
 	}
 }
