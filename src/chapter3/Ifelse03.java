@@ -1,4 +1,4 @@
-package chapter2;
+package chapter3;
 
 public class Ifelse03 {
 	public static boolean doSomeThing()	{

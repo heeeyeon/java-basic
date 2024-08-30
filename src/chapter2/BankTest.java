@@ -12,7 +12,7 @@ public class BankTest {
 		// 소유격이라고 표현할 수 있겠음
 		
 		System.out.println("홍길동 고객 11-11에 100원 입금");
-		a1.deposit(100); // 입금 메서드 실행
+		a1.deposit(100); // 입금 메서드 실행, 인자로 정수 100을 넣음
 		System.out.println(a1.accountNo + " : " + a1.balance);
 		
 		System.out.println("홍길동 고객 11-11에 300원 출금");

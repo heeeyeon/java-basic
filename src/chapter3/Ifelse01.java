@@ -1,4 +1,4 @@
-package chapter2;
+package chapter3;
 
 // 패키지 : 기능이 유사한 클래스들의 묶음
 // 현재 클래스와 다른 패키지에 있는 클래스를 불러와서 사용하는 방법 import
