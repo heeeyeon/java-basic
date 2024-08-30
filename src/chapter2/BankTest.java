@@ -10,7 +10,17 @@ public class BankTest {
 		// 객체이름.변수명, 객체이름.메서드명
 		// (점 연산자라고도 부른다. 객체안의 요소를 꺼내올 수 있게하는 연산자)
 		// 소유격이라고 표현할 수 있겠음
-		a1.deposit(100); // 객체의 요소(인스턴스 변수)에 값을 대입함
+		
+		System.out.println("홍길동 고객 11-11에 100원 입금");
+		a1.deposit(100); // 입금 메서드 실행
 		System.out.println(a1.accountNo + " : " + a1.balance);
+		
+		System.out.println("홍길동 고객 11-11에 300원 출금");
+		boolean result = a1.withdraw(300);	// 출금 메서드 실행하고 결과 반환
+		if(result) {
+			System.out.println("출금 성공!");
+		} else {
+			System.out.println("잔고가 부족합니다!");
+		}
 	}
 }

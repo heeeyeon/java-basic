@@ -26,4 +26,12 @@ public class Account {
 		return balance = balance + amount;
 	}
 
+	boolean withdraw(int amount) {
+		boolean result = false;	// 출금 결과를 저장 : 성공 -> true, 실패 -> false
+		if (balance >= amount) {
+			balance = balance - amount;
+			result = true;
+		}	//end if
+		return result;
+	}	// end method
 }
